@@ -19,12 +19,12 @@ NOT compatible with Typescript.
 
 ### How to use:
 
-FatSeaDragon requires four parameters as props:
-- prefixUrl, a string specifying a folder which contains all the deep zoom image slices
-- tileSources, a string specifying a direct Url to the dzi or json file that contains metadata about how to read the deep zoom image
-- height: how tall to render the viewer (it takes units such as vh), as a string
-- width: how wide to render the viewer (it takes units such as vw), as a string
-- showNavigator: a boolean that indicates whether to show a small navigator
+FatSeaDragon requires 5 parameters as props:
+- **prefixUrl**, a *string* specifying a folder which contains all the deep zoom image slices
+- **tileSources**, a *string* specifying a direct Url to the dzi or json file that contains metadata about how to read the deep zoom image
+- **height**: a *string* specifying how tall to render the viewer (it takes units such as vh)
+- **width**: a *string* specifying how wide to render the viewer (it takes units such as vw)
+- **showNavigator**: a *boolean* that indicates whether to show a small navigator
 
 
 ```
