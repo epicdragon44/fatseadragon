@@ -1,0 +1,66 @@
+{
+  "name": "fatseadragon",
+  "description": "A React Wrapper for OpenSeaDragon",
+  "author": "Daniel Wei",
+  "keywords": [
+    "wrapper",
+    "react",
+    "openseadragon",
+    "dzi"
+  ],
+  "license": "BSD-3-Clause",
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epicdragon44/fatseadragon.git"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@emotion/react": "^11.9.0",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/lab": "latest",
+    "@mui/material": "latest",
+    "@mui/styled-engine-sc": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "openseadragon": "^3.0.0",
+    "react": "latest",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "latest",
+    "react-scripts": "latest",
+    "react-select": "^5.3.2",
+    "styled-components": "latest"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@craco/craco": "latest"
+  }
+}
