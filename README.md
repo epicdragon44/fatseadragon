@@ -40,7 +40,7 @@ export default function App() {
         tileSources="http://goblinrum.mynetgear.com/images/outputs/testimage1_outdzi.dzi"
         height="50vh"
         width="50vw"
-        showNavigator={true}
+        showNavigator=true
       />
     </>
   );

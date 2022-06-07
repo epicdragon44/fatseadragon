@@ -42,7 +42,7 @@ const FatSeaDragon = props => {
       minZoomLevel: 1,
       visibilityRatio: 1,
       zoomPerScroll: 2,
-      showNavigator: true,
+      showNavigator: props.showNavigator,
       zoomInButton: "zoom-in",
       zoomOutButton: "zoom-out",
       homeButton: "home",
