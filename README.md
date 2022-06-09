@@ -36,11 +36,11 @@ export default function App() {
   return (
     <>
       <FatSeaDragon 
-        prefixUrl="http://goblinrum.mynetgear.com/images/outputs/"
-        tileSources="http://goblinrum.mynetgear.com/images/outputs/testimage1_outdzi.dzi"
+        prefixUrl="http://exampledomain.com/images/outputs/"
+        tileSources="http://exampledomain.com/images/outputs/testimage1_outdzi.dzi"
         height="50vh"
         width="50vw"
-        showNavigator=true
+        showNavigator={true}
       />
     </>
   );
