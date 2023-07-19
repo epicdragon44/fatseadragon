@@ -1,7 +1,9 @@
 # Fatseadragon
 
-[![npm version](https://badge.fury.io/js/fatseadragon.svg)](https://badge.fury.io/js/fatseadragon)
-[![GitHub license](https://img.shields.io/github/license/epicdragon44/fatseadragon.svg)](https://github.com/epicdragon44/fatseadragon/)
+[![NPM version][npm-image]][npm-url]
+[![Build][github-build]][github-build-url]
+![npm-typescript]
+[![License][github-license]][github-license-url]
 
 ## Description
 
@@ -21,3 +23,11 @@ npm install fatseadragon
 yarn
 yarn start
 ```
+
+[npm-url]: https://www.npmjs.com/package/fatseadragon
+[npm-image]: https://img.shields.io/npm/v/fatseadragon.svg
+[github-license]: https://img.shields.io/github/license/epicdragon44/fatseadragon
+[github-license-url]: https://github.com/epicdragon44/fatseadragon/blob/master/LICENSE
+[github-build]: https://github.com/epicdragon44/fatseadragon/actions/workflows/publish.yml/badge.svg
+[github-build-url]: https://github.com/epicdragon44/fatseadragon/actions/workflows/publish.yml
+[npm-typescript]: https://img.shields.io/npm/types/fatseadragon
