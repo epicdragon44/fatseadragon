@@ -1,66 +1,62 @@
 {
   "name": "fatseadragon",
-  "description": "A React Wrapper for OpenSeaDragon",
+  "description": "An Open-Source React Wrapper for OpenSeaDragon. TypeScript-ready, with built in plugins.",
   "author": "Daniel Wei",
   "keywords": [
     "wrapper",
     "react",
     "openseadragon",
-    "dzi"
+    "dzi",
+    "image",
+    "viewer",
+    "component",
+    "deep-zoom"
   ],
-  "license": "BSD-3-Clause",
-  "version": "1.1.1",
+  "license": "MIT",
+  "version": "2.0.0",
   "private": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/epicdragon44/fatseadragon.git"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@emotion/react": "^11.9.0",
-    "@mui/icons-material": "^5.8.2",
-    "@mui/lab": "latest",
-    "@mui/material": "latest",
-    "@mui/styled-engine-sc": "latest",
-    "@testing-library/jest-dom": "latest",
-    "@testing-library/react": "latest",
-    "@testing-library/user-event": "latest",
-    "openseadragon": "^3.0.0",
-    "react": "latest",
-    "react-device-detect": "^2.2.2",
-    "react-dom": "latest",
-    "react-scripts": "latest",
-    "react-select": "^5.3.2",
-    "styled-components": "latest"
-  },
   "scripts": {
-    "start": "craco start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
-    "@craco/craco": "latest"
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.6.1",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.6.1",
+    "prettier": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": ">=16"
   }
 }
